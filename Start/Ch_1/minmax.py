@@ -15,8 +15,17 @@ strings = ["one", "three", "five", "seven", "eleven", "eighteen"]
 
 
 # TODO: define a custom "key" function to extract a data field
-
+print(f"Maximum field is : {max(strings, key=len)}")
 
 # TODO: open the data file and load the JSON
-# with open("../../30DayQuakes.json", "r") as datafile:
-#     data = json.load(datafile)
+with open("../../30DayQuakes.json", "r") as datafile:
+    data = json.load(datafile)
+
+print(data['metadata']['title'])
+print(f"No. of records: ", len(data['features']))
+
+# Min. earthquake magnitude
+print(data['features'][2])
+min([float(x['properties']['mag']) for x in data['features'] if x['properties']['mag'] != None])
+
+# Max earthquake magnitude
