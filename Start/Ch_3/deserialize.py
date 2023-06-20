@@ -7,8 +7,10 @@ import pprint
 
 # read the contents of a CSV file into an object structure
 result = []
+with open('../../5magquakes.csv', 'r') as f:
+    data = f.readlines()
 
 # TODO: open the CSV file for reading
 
 
-pprint.pp(result)
+pprint.pp(data)

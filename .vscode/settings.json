@@ -16,7 +16,7 @@
     "explorer.openEditors.visible": 0,
     "files.autoSave": "afterDelay",
     "screencastMode.onlyKeyboardShortcuts": true,
-    "terminal.integrated.fontSize": 20,
+    "terminal.integrated.fontSize": 14,
     "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Visual Studio Dark",
     "workbench.fontAliasing": "antialiased",
